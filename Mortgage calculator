@@ -1,0 +1,17 @@
+# MORTGAGE CALCULATOR
+
+def loan_emi(p,r,n):
+    
+    EMI = p*r/1200*((1 + r/1200)**n)/(((1 + r/1200)**n)-1)
+    
+    print("The loan amount taken is: {}".format(p))
+    print('\n')
+    print("The total time duration in months is: {}".format(n))
+    print('\n')
+    print("The interest rate charged is: {}".format(r))
+    print('\n')
+    print("The monthly EMI will be: {}".format(EMI))
+    print('\n')
+    print('The total amount to be paid by the end of tenure will be: {}'.format(EMI*12*n/12))
+    
+    loan_emi(72000,15,48)
